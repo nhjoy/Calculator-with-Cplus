@@ -8,16 +8,17 @@
 class Calc
 {
 private:
-    /* data */
+    size_t store;
 public:
     Calc(int val);
-    ~Calc();
+    // ~Calc();
+
+    // methods
+    double process (std::string userInput, double prevValue);
+    void print();
+    std::string* storedExpressions;
+    void setStored(size_t newStored);
+    size_t getStored();
 };
 
-Calc::Calc(/* args */)
-{
-}
-
-Calc::~Calc()
-{
-}
+#endif
